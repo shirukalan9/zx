@@ -7,7 +7,7 @@ BRANCH_VT=stg
 DEVICE=X6882
 
 # ROM Init
-repo init -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault --depth=1 --git-lfs --no-repo-verify/opt/crave/resync.sh
+repo init -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault --depth=1 --git-lfs --no-repo-verify
 /opt/crave/resync.sh
 
 
