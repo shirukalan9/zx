@@ -1,5 +1,5 @@
 # Cleanup
-rm -rf device/infinix tools hardware/ device/mediatek vendor/infinix vendor/mediatek hardware/mediatek android packages prebuilts prebuilt
+rm -rf device external tools hardware/ device/mediatek vendor/infinix vendor/mediatek hardware/mediatek android packages prebuilts prebuilt
 
 # DT
 BRANCH_DT=staging
@@ -29,11 +29,17 @@ export BUILD_HOSTNAME=android
 export KBUILD_BUILD_NAME=zaidannn7
 export KBUILD_BUILD_HOST=android
 
-# dirty
-cd build/tools
-wget -qO- https://github.com/Evolution-X/build/commit/d2817e9ad6a34ad08325742338f513ee5af2fa89.diff | git apply
-wget -qO- https://github.com/Evolution-X/build/commit/a8297166097f37cf2ddfb39cf0a84b289bd0a33e.diff | git apply
+
+cd frameworks/base
+wget -O- https://github.com/AxionAOSP/android_frameworks_base/commit/c2ce0dc21acb37b0b6e59861ce3198d4d20fc94a.diff | patch -p1 -N
+wget -O- https://github.com/LOSModified/android_frameworks_base/commit/ecd369bf53de4ee0b341670bbb11f10e2d9f795f.diff | patch -p1 -N
+wget -O- https://github.com/LOSModified/android_frameworks_base/commit/03a8145a350369d1cf1d2cb54c587101e253876c.diff | patch -p1 -N
 cd ../..
+
+#cd build/tools
+#wget -qO- https://github.com/Evolution-X/build/commit/d2817e9ad6a34ad08325742338f513ee5af2fa89.diff | git apply
+#get -qO- https://github.com/Evolution-X/build/commit/a8297166097f37cf2ddfb39cf0a84b289bd0a33e.diff | git apply
+#cd ../..
 
 cd bionic
 #wget -qO- https://github.com/Lunaris-AOSP/bionic/commit/8b5c560e37449ea31b5dace03169d9c66ca2c597.diff | git apply
