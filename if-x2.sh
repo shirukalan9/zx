@@ -2,8 +2,8 @@
 rm -rf device/infinix tools hardware/ device/mediatek vendor/infinix vendor/mediatek hardware/mediatek android packages prebuilts prebuilt
 
 # DT
-BRANCH_DT=inf
-BRANCH_VT=lineage-23.2
+BRANCH_DT=staging
+BRANCH_VT=stg
 DEVICE=X6882
 
 # ROM Init
@@ -13,8 +13,8 @@ repo init -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mip
 
 #---------------------------------------------------
 # Device 
-git clone -b ${BRANCH_DT} https://github.com/zaidannn7/b device/infinix/X6882
-git clone --depth=1 -b ${BRANCH_VT} https://gitlab.com/zaidannn7/vendor_infinix_X6882 vendor/infinix/X6882
+git clone -b ${BRANCH_DT} https://github.com/testingprjct/8dua device/infinix/X6882
+git clone --depth=1 -b ${BRANCH_VT} https://gitlab.com/testingprjct/eks8dua vendor_infinix_X6882 vendor/infinix/X6882
 git clone --depth=1 https://github.com/zaidannn7/device_infinix_X6882-kernel device/infinix/X6882-kernel
 #----------------------------------------------------
 # Mediatek Specific
