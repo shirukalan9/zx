@@ -24,10 +24,7 @@ git clone --depth=1 https://github.com/MillenniumOSS/android_device_mediatek_sep
 git clone --depth=1 https://github.com/MillenniumOSS/android_hardware_mediatek hardware/mediatek
 git clone https://github.com/MillenniumOSS/android_device_millennium_common-kernel device/millennium/common-kernel
 #-----------------------------------------------------
-export BUILD_USERNAME=zaidannn7
-export BUILD_HOSTNAME=android
-export KBUILD_BUILD_NAME=zaidannn7
-export KBUILD_BUILD_HOST=android
+
 
 
 cd frameworks/base
