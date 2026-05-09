@@ -1,5 +1,5 @@
 # Cleanup
-rm -rf device/infinix tools hardware/ device/mediatek vendor/infinix vendor/mediatek hardware/mediatek android packages prebuilts prebuilt
+rm -rf device/infx tools hardware/ device/mediatek vendor/infinix vendor/mediatek hardware/mediatek android packages prebuilts prebuilt
 
 # DT
 BRANCH_DT=staging-clv
@@ -24,10 +24,7 @@ git clone --depth=1 https://github.com/MillenniumOSS/android_device_mediatek_sep
 git clone --depth=1 https://github.com/MillenniumOSS/android_hardware_mediatek hardware/mediatek
 git clone https://github.com/MillenniumOSS/android_device_millennium_common-kernel device/millennium/common-kernel
 #-----------------------------------------------------
-export BUILD_USERNAME=zaidannn7
-export BUILD_HOSTNAME=android
-export KBUILD_BUILD_NAME=zaidannn7
-export KBUILD_BUILD_HOST=android
+
 
 # Build
 source build/envsetup.sh
