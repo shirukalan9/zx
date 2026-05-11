@@ -1,8 +1,9 @@
 # Cleanup
-rm -rf device external tools hardware/ device/mediatek  vendor/mediatek hardware/mediatek android packages prebuilts prebuilt
+rm -rf device frameworks external tools hardware/ device/mediatek  vendor/mediatek hardware/mediatek android packages build prebuilts prebuilt
 
 # ROM Init
-repo init -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault --depth=1 --git-lfs --no-repo-verify
+#repo init -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault --depth=1 --git-lfs --no-repo-verify
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.2 --git-lfs
 /opt/crave/resync.sh
 
 # Device 
