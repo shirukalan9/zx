@@ -12,8 +12,8 @@ git clone -b stable  https://github.com/testingprjct/8dua device/infinix/X6882
 # Build
 source build/envsetup.sh
 #axion X6882 user pico
-#ax -br -j$(nproc --all)
+#ax -br 
 
 
 lunch infinity_X6882-user
-m bacon -j$(nproc --all)
+m bacon 
