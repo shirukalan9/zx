@@ -9,6 +9,7 @@ repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.2 --git-lfs 
 /opt/crave/resync.sh
 
 # Device 
+rm -rf device/infinix
 git clone -b ax  https://github.com/zaidannn7/device_infinix_X6882_guts device/infinix/X6882
 
 # Build
