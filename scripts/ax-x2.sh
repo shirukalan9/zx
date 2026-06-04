@@ -1,5 +1,5 @@
 # Cleanup
-rm -rf bionic external_deqp
+rm -rf bionic external
 #frameworks/native bionic
 #external tools hardware/ device/mediatek  vendor/mediatek hardware/mediatek android packages build prebuilts prebuilt
 
