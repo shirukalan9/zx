@@ -4,7 +4,7 @@ rm -rf frameworks/native
 
 # ROM Init
 #repo init -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault --depth=1 --git-lfs --no-repo-verify
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.2 --git-lfs
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.2 --git-lfs --depth=1
 /opt/crave/resync.sh
 
 # Device 
