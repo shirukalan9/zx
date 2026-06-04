@@ -1,5 +1,6 @@
 # Cleanup
-rm -rf frameworks/native
+rm -rf bionic
+#frameworks/native bionic
 #external tools hardware/ device/mediatek  vendor/mediatek hardware/mediatek android packages build prebuilts prebuilt
 
 # ROM Init
