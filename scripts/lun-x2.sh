@@ -1,12 +1,12 @@
 # Cleanup
-#rm -rf external  frameworks/native device/infinix
+rm -rf frameworks/native device/infinix
 #ardware/mediatek device/mediatek  vendor/mediatek build/tools
 
 #error: Unable to fully sync the tree
 #error: Checking out local projects failed.
 #Failing repos (checkout):
 #prebuilts/clang/host/linux-x86
-rm -rf prebuilts/clang/host/linux-x86
+#rm -rf prebuilts/clang/host/linux-x86
 
 
 # ROM Init
