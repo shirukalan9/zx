@@ -1,5 +1,4 @@
 # Cleanup
-rm -rf bionic external
 #frameworks/native bionic
 #external tools hardware/ device/mediatek  vendor/mediatek hardware/mediatek android packages build prebuilts prebuilt
 
@@ -7,6 +6,8 @@ rm -rf bionic external
 #repo init -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault --depth=1 --git-lfs --no-repo-verify
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.2 --git-lfs --depth=1
 /opt/crave/resync.sh
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
+
 
 # Device 
 rm -rf device/infinix
