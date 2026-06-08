@@ -1,5 +1,5 @@
 # Cleanup
-rm -rf external  frameworks/native device/infinix
+#rm -rf external  frameworks/native device/infinix
 #ardware/mediatek device/mediatek  vendor/mediatek build/tools
 
 #error: Unable to fully sync the tree
