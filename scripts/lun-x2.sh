@@ -21,7 +21,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 
 # Device 
-git clone -b lunar https://github.com/zaidannn7/device_infinix_X6882_guts device/infinix/X6882
+git clone -b lunar https://github.com/shirukalan/device device/infinix/X6882
 
 # Build
 . build/envsetup.sh
