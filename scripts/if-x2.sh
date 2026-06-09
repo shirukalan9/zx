@@ -7,11 +7,11 @@ repo init -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mip
 /opt/crave/resync.sh
 
 # Device 
-git clone -b stable  https://github.com/testingprjct/8dua device/infinix/X6882
+git clone -b stable  https://github.com/testingprjct/8dua device/
 
 # Build
 source build/envsetup.sh
-#axion X6882 user pico
+#axion user pico
 #ax -br 
 
 
