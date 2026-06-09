@@ -1,5 +1,5 @@
 # Cleanup
-rm -rf device/infinix
+rm -rf device/xiaomi
 #frameworks/native
 #ardware/mediatek device/mediatek  vendor/mediatek build/tools
 
@@ -21,7 +21,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 
 # Device 
-git clone -b lunar https://github.com/shirukalan/device device/infinix/X6882
+git clone -b lunar https://github.com/shirukalan/device device/xiaomi/lime
 
 # Build
 . build/envsetup.sh
