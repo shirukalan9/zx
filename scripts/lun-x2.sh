@@ -21,7 +21,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 
 # Device 
-git clone -b lunar https://github.com/shirukalan/device device/xiaomi/lime
+git clone -b luns https://github.com/shirukalan/device device/xiaomi/lime
 
 # Build
 . build/envsetup.sh
