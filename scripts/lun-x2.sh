@@ -19,6 +19,8 @@ repo init -u https://github.com/Lunaris-AOSP/android -b 16.2 --depth=1 --git-lfs
 # user: https://foss.crave.io/app/#/build/info/278748?team=14
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
+rm -rf frameworks/native
+git clone --depth=1 -b a --single-branch https://github.com/shirukalan9/frameworks_native frameworks/native
 
 # Device 
 git clone -b luns https://github.com/shirukalan/device device/xiaomi/lime
