@@ -1,7 +1,13 @@
  # Cleanup
 #frameworks/native bionic
 #external tools hardware/ device/mediatek  vendor/mediatek hardware/mediatek android packages build prebuilts prebuilt
-
+#
+#
+#
+#
+# ---------------------------------------------------------------------------
+#
+# 
 # ROM Init
 #repo init -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault --depth=1 --git-lfs --no-repo-verify
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.2 --git-lfs --depth=1
@@ -13,12 +19,6 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 rm -rf device/infinix
 git clone -b ab  https://github.com/shirukalan9/zvt device/infinix/X6882
 
-rm -rf frameworks/native
-git clone --depth=1 --no-repo-verify -b ax https://github.com/shirukalan9/frameworks_native/ frameworks/native
-rm -rf frameworks/base
-git clone --depth=1 --no-repo-verify -b ax https://github.com/shirukalan9/frameworks_base-1 frameworks/base
-rm -rf bionic
-git clone --depth 1 -b lineage-23.2 https://github.com/shirukalan9/zonic bionic
 # Build
 source build/envsetup.sh
 axion X6882 user pico
