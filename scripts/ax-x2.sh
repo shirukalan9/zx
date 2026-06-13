@@ -11,8 +11,10 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # Device 
 rm -rf device/infinix
-git clone -b ax  https://github.com/zaidannn7/device_infinix_X6882_guts device/infinix/X6882
+git clone -b ab  https://github.com/shirukalan9/zvt device/infinix/X6882
 
+rm -rf frameworks/native
+git clone --depth=1 --no-repo-verify -b ax https://github.com/shirukalan9/frameworks_native/ frameworks/native
 # Build
 source build/envsetup.sh
 axion X6882 user pico
