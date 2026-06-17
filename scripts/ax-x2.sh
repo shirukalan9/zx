@@ -17,7 +17,10 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 
 # Device 
-git clone -b ab  https://github.com/shirukalan9/zvt device/xiaomi/lime
+git clone -b ab  https://github.com/shirukalan9/zvt device/infinix/X6882
 
 # Build
 source build/envsetup.sh
+axion X6882 user pico
+ax -br 
+
