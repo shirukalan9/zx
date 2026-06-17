@@ -17,6 +17,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 
 # Device 
+rm -rf device/infinix
 git clone -b ab  https://github.com/shirukalan9/zvt device/infinix/X6882
 
 # Build
