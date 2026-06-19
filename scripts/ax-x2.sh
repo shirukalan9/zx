@@ -3,7 +3,6 @@
 #external tools hardware/ device/mediatek  vendor/mediatek hardware/mediatek android packages build prebuilts prebuilt
 #
 #
-rm device/xiaomi
 #
 #
 # ---------------------------------------------------------------------------
@@ -18,7 +17,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # Device 
 rm -rf device/infinix
-git clone -b ab  https://github.com/shirukalan9/zvt device/infinix/X6882
+git clone -b ax  https://github.com/zaidannn7/device_infinix_X6882-jva device/infinix/X6882
 
 # Build
 source build/envsetup.sh
